@@ -48,6 +48,29 @@ let booleanIslogIn = Boolean(isLoggedIn);
 let someNumber  = 33;
 
 let stringNumber = String(someNumber);
-console.log(stringNumber);  // 33
+//console.log(stringNumber);  // 33
 
-console.log(typeof stringNumber); // string
+// console.log(typeof stringNumber); // string
+
+// **************************** Operation *****************************
+
+let value = 3;
+let negValue = -value;
+// console.log(negValue);
+
+// Operation
+
+// console.log(2**3) // 8 ** means power
+
+// console.log( "1" + 2);   // 12  typeof string  
+// console.log( 1 + "2");   // 12   typeof string  
+// console.log("1" + 2 + 2) // 122   typeof string  
+// console.log(3 + 2 + "2") // 52  typeof string  
+
+// If string first pe hai to sab string me ho jaayega
+// if string last me hai to sab normal then string
+
+console.log(+true);  // 1
+// console.log(true+);  // error
+
+console.log(+"");  // 1 due to empty string it will 0 but due to + it will increment by 1
