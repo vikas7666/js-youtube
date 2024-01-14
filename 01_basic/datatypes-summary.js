@@ -22,7 +22,7 @@ Non Primitive (Reference Type)
 */
 
 const id = Symbol('123'); // Symbol 123 symbol always provide unique value even if you initialize same value
-const anotherID = Symbol('123')
+// const anotherID = Symbol('123')
 // console.log(id === anotherID); // false
 
 /* 
@@ -47,6 +47,33 @@ console.log(typeof array1); // Object
 let myfunction = function abc() {
     console.log(typeof myfunction);
 }
-myfunction() // function
+// myfunction() // function
+
+// ************************  Memory ************************************
+
+/* 
+    1) Stack  (Primitive)   ==>  Copy
+    2) Heap   (Non Primitive type)   ==> reference ==> original value
+*/
+
+let myYoutube = 'vikasshukla.in'
+
+let anotherYoutube = myYoutube;
+anotherYoutube  = 'nonYoutube'
+
+ console.log(myYoutube);       // vikasshukla.in
+ console.log(anotherYoutube);  //nonYoutube
+
+
+ let obj1 = {
+    name: 'vikas'
+ }
+
+console.log(obj1);
+
+let obj2 = obj1;
+obj2.name = 'vipul'
+console.log(obj2);
+console.log(obj1);
 
 
