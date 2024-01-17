@@ -24,8 +24,24 @@ const game = new String('hello-hc')
 //console.log(game.indexOf('t'));  // As hello is not there then its showing -1 
 //console.log(game.indexOf('l'));  // 2 ==> first occourence
 
-// const newString =  game.substring(0,6);
+// const newString =  game.substring(0,6); // we can use negetive value
 // console.log(newString);  // hello
 
-const anotherString = game.slice(-8,2);
-console.log(anotherString);  // he
+const anotherString = game.slice(-8,2);   // we can use negetive value 
+// console.log(anotherString);  // he
+
+const newStringOne =  ' hitesh     ';
+// console.log(newStringOne); //  hitesh // with space 
+// console.log(newStringOne.trim())   // hitesh proper 
+
+const url = "https://vikas%20.com" // browser by default add %20 in space
+
+// console.log(url.replace('%20', '-'));  // https://vikas-.com
+
+// console.log(url.includes('tesh')); // false 
+
+// console.log(game.split('-'));  // [ 'hello', 'hc' ]  will return un array 
+
+console.log(url.split('%20')) // will return in [ 'https://vikas', '.com' ]
+
+
