@@ -58,7 +58,7 @@ let arry2  = new Array('TCS','HDFC','LNT');
 
 // let valueCheck = arry2.includes('TCS') 
 
-let valueCheck = arry2.indexOf('TCS');
+// let valueCheck = arry2.indexOf('TCS');
 // console.log(valueCheck);  // at position zero 
 
 // Join in Array  it will return in string method
@@ -68,3 +68,16 @@ let valueCheck = arry2.indexOf('TCS');
 
 
 // slice and splice method
+/* slice method  does not include lastIndex of element*/
+
+console.log("Original Array",arry2); // Original Array [ 'TCS', 'HDFC', 'LNT' ] 
+// console.log(arry2.slice(1,3))       //  [ 'HDFC', 'LNT' ]
+// console.log(arry2.slice(0,2))       // [ 'TCS', 'HDFC' ]
+// console.log(arry2.slice(2,3))       // [ 'LNT' ]
+
+// Splice last Index Include 
+// The splice() method overwrites the original array.
+console.log("splice operation",arry2.splice(0,2))  // splice operation [ 'TCS', 'HDFC' ]
+
+console.log("Original Array Splice",arry2);  
+
