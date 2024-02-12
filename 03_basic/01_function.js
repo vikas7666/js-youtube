@@ -27,11 +27,52 @@ function addTwoNumber(num1,num2){
 
 // Now we arestoring value in result 
 
-let total = addTwoNumber(5,3)  // 8
+// let total = addTwoNumber(5,3)  // 8
 
-console.log("total",total);
+// console.log("total",total);
 
 /* 8            
 total undefined */  // here we get undefined bcz function is not returing anything
 
 // total 8 Now we get reult bcz we have returned from function
+
+/* function loginUser(username) {
+    return `${username} User Just Logned In `
+}
+ */
+// console.log(loginUser('vikas'));  // vikas User Just Logned In 
+
+// console.log(loginUser(''));  // User Just Logned In 
+// console.log(loginUser());  //   undefined User Just Logned In 
+
+
+/*  ************************** Important Note
+ "" // false
+    undefined  // false 
+*/
+// How to tackle undefined never came for this approch make sure we will defined some value 
+
+function loginUser(username = 'vikas' ) {
+    // if(username === undefined){
+    //     console.log('Please enter a username')
+    //     return
+    // }
+
+    //  we write better way on above code 
+    if(!username){
+        console.log('Please enter a username')
+    }
+    return `${username} User Just Logned In `
+}
+
+
+
+console.log(loginUser());
+
+// Please enter a username
+// undefined
+
+
+// Here we have defined some value
+
+// vikas User Just Logned In (bcz we have passed some value default )
