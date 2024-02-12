@@ -5,7 +5,7 @@
 // }
 // console.log(calculatePrice(2,3,4,5));  
 
-// 2 here we will get only one value return 
+//  here we will get only one value return 
 // To handle to take multiple paramater we have defiend spread or rest operator 
 
 // function calculatePrice(...num1) {
@@ -31,7 +31,7 @@
 //     console.log(`username is ${anyobject.name}  ${anyobject.price}`)
 // }
 
-// Function first way pass object 
+// we are passing obeject in function  
 // console.log(printUsername(personObj));
 
 //  Basically hum logo ne function me object pass kiya 
@@ -44,7 +44,7 @@
 // username is vipul  42
 
 
-/* We can also pass array also  */ 
+/* We can also pass array in to function  */ 
 
 const myarr = [100,200,300,400]
 
