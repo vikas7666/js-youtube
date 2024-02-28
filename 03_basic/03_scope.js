@@ -73,16 +73,37 @@ num2()  // usernameES6 undefined */
 // ()  ==> no return keyword 
 
 
-const num2  = (num1, num2) => (num1 + num2);  // omit return keyword  curly braces
-console.log(num2(4,5));  // 9 
+// const num2  = (num1, num2) => (num1 + num2);  // omit return keyword  curly braces
+// console.log(num2(4,5));  // 9 
 
-// Explicit return
-// when we explicitly use return keyword 
+// // Explicit return
+// // when we explicitly use return keyword 
 
-const num3  = () => ({name : 'hello'});
+// const num3  = () => ({name : 'hello'});
 
-console.log('num3',num3())  // num3 { name: 'hello' }
-
-
+// console.log('num3',num3())  // num3 { name: 'hello' }
 
 
+function chai(){
+    console.log('DB connected')
+}
+chai(); // DB connected
+
+// USing Immidiated Invoke function 
+
+(function aurcode(){
+    console.log('DB data instterted'); // DB data instterted
+})();
+
+// using es6 
+(function aurcode(){
+    console.log('DB data instterted'); // DB data instterted
+})();
+
+(()  =>{
+    console.log('DB data instterted222'); // DB data instterted222
+})();
+
+((name)  =>{
+    console.log(`DB data instterted222, ${name}`); // DB data instterted222, vikas
+})('vikas')
