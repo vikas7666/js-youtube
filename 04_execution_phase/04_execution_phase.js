@@ -28,13 +28,6 @@
      val1 => 10
      val2 ==> 10
      add num  ==> will create its own new execution context
-
-
-     -----------------------------------------------------------------------------------------
-
-     call stack 
-
-     
 */
 
 
