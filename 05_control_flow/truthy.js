@@ -12,5 +12,5 @@ false , 0, -0, BigInt, 0n, "", null, undefined, NAN
 
 // Truthy value
 
-"0", 'false', " ", 
+// "0", 'false', " ", 
 
