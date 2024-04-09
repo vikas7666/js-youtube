@@ -18,23 +18,26 @@
     </style>
 </head>
 <body class="bg-black">
-    <div class="language">
+    <ul class="languagelist">
         <li>Javascript</li>
-    </div>
+    </ul>
 
     <script>
         function addlanguage(lang){
-            let language = document.querySelector('.bg-black');
             let languageName = document.createElement('li');
-            language.appendChild = languageName;
-            console.log(language)
+            let languagelist = document.querySelector('.languagelist');
+           
+            languagelist.appendChild(languageName);
             languageName.innerText = lang;
-            document.body.appendChild = language;
-
-            console.log(languageName)
-            console.log(language)
         }
         addlanguage('hindi')
+
+        // optamize way 
+        function name(languageName) {
+           const li =  document.createElement('li');
+           li.appendChild(document.createTextNode(langName));
+           document.querySelector('.language').appendChild(li)
+        }
     </script>
 </body>
 </html>
