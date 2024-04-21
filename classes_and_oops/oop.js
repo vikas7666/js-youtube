@@ -24,8 +24,10 @@
 
 // new keyword is nothing but constructor function
 // from single object literal se multiple instance banaa sakate ho
-// const date = new Date();
-// const promise = new Promise();
+
+
+ const date = new Date();
+ const promise = new Promise();
 
 // console.log(this)  // {} is nothing but blank object
 
@@ -43,6 +45,8 @@ function User(username, isLogin, loginAttempt){
 // const userTwo = User('hello',12, false);
 // console.log('userOne',userOne)
 
+
+// Here if we don't use new keyword then value overwrite ho jataa hai 
 // username: 'hello',
 //   isLogin: 12,
 //  loginAttempt: false
