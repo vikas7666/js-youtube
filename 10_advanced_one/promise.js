@@ -24,12 +24,91 @@
 // })
 
 
-const promiseThree = new Promise(function(resolve,reject){
-    setTimeout(function(){
-        resolve({username: 'viaks',surname:'shukla'})
-    },1000)
+// const promiseThree = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         resolve({username: 'viaks',surname:'shukla'})
+//     },1000)
+// })
+
+// promiseThree.then(function(user){
+//     console.log(user) // { username: 'viaks', surname: 'shukla' }
+// })
+
+
+// const promiseFour  = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         let error = true;
+//         if(error){
+//             resolve({username:'vikas',password : 123})
+//         }else{
+//             reject('Error Something Went Wrong')  // Error Something Went Wrong
+//         }
+//     }, 1000);
+// })
+
+// promiseFour.then((user)=>{
+//     console.log(user)
+//     return user;
+// })
+// .then( (user) =>{
+//    console.log(user.username)
+// })
+// .catch((error)=>{
+//     console.log(error)
+// }).finally(()=>{
+//     console.log('The promise is either resolved or rejected')
+// })
+
+/* { username: 'vikas', password: 123 }
+vikas */
+
+// const promiseFive  = new Promise( function(resolve,reject){
+//     setTimeout(() => {
+//         let error = true;
+//         if(!error){
+//             resolve('Prmise resolved')
+//         }else{
+//             reject('Promise reject')
+//         }
+//     }, 1000);
+// })
+
+
+// async function consumePromiseFive(){
+//     try {
+//         const response = await promiseFive;
+//         console.log('response',response)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+
+// consumePromiseFive() 
+
+// Promise reject
+
+
+
+// async function getAllUser(){
+//     const response  =  await fetch('https://jsonplaceholder.typicode.com/users');
+//     const data  = await response.json();
+//     console.log(data)
+// }
+
+// getAllUser()
+
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then( (response) =>{
+    return response.json();
 })
 
-promiseThree.then(function(user){
-    console.log(user) // { username: 'viaks', surname: 'shukla' }
+.then((data) =>{
+    return data;
+})
+.then((data) =>{
+    console.log(data)
+})
+.catch( (err) =>{
+    console.log(err)
 })
