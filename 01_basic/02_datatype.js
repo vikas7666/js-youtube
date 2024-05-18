@@ -16,5 +16,4 @@ console.log(3 + 3)
 
 console.log(typeof ""); // To check type of variable
 console.log(typeof null);  // object
-
 console.log(typeof undefined) // object
